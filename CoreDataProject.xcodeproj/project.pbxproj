@@ -13,6 +13,11 @@
 		BDFE7E8A2A41F413003547B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFE7E892A41F413003547B7 /* Preview Assets.xcassets */; };
 		BDFE7E912A41F458003547B7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE7E902A41F458003547B7 /* DataController.swift */; };
 		BDFE7E942A41F4E9003547B7 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDFE7E922A41F4E9003547B7 /* CoreDataProject.xcdatamodeld */; };
+		BDFE7E972A429459003547B7 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE7E952A429459003547B7 /* Movie+CoreDataClass.swift */; };
+		BDFE7E982A429459003547B7 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE7E962A429459003547B7 /* Movie+CoreDataProperties.swift */; };
+		BDFE7E9B2A433016003547B7 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE7E992A433016003547B7 /* Singer+CoreDataClass.swift */; };
+		BDFE7E9C2A433016003547B7 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE7E9A2A433016003547B7 /* Singer+CoreDataProperties.swift */; };
+		BDFE7E9E2A433194003547B7 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE7E9D2A433194003547B7 /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		BDFE7E892A41F413003547B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDFE7E902A41F458003547B7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		BDFE7E932A41F4E9003547B7 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		BDFE7E952A429459003547B7 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BDFE7E962A429459003547B7 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BDFE7E992A433016003547B7 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BDFE7E9A2A433016003547B7 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BDFE7E9D2A433194003547B7 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 		BDFE7E812A41F413003547B7 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				BDFE7E992A433016003547B7 /* Singer+CoreDataClass.swift */,
+				BDFE7E9A2A433016003547B7 /* Singer+CoreDataProperties.swift */,
+				BDFE7E952A429459003547B7 /* Movie+CoreDataClass.swift */,
+				BDFE7E962A429459003547B7 /* Movie+CoreDataProperties.swift */,
 				BDFE7E822A41F413003547B7 /* CoreDataProjectApp.swift */,
 				BDFE7E842A41F413003547B7 /* ContentView.swift */,
+				BDFE7E9D2A433194003547B7 /* FilteredList.swift */,
 				BDFE7E902A41F458003547B7 /* DataController.swift */,
 				BDFE7E922A41F4E9003547B7 /* CoreDataProject.xcdatamodeld */,
 				BDFE7E862A41F413003547B7 /* Assets.xcassets */,
@@ -143,9 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFE7E9B2A433016003547B7 /* Singer+CoreDataClass.swift in Sources */,
 				BDFE7E852A41F413003547B7 /* ContentView.swift in Sources */,
+				BDFE7E9E2A433194003547B7 /* FilteredList.swift in Sources */,
 				BDFE7E912A41F458003547B7 /* DataController.swift in Sources */,
 				BDFE7E942A41F4E9003547B7 /* CoreDataProject.xcdatamodeld in Sources */,
+				BDFE7E972A429459003547B7 /* Movie+CoreDataClass.swift in Sources */,
+				BDFE7E9C2A433016003547B7 /* Singer+CoreDataProperties.swift in Sources */,
+				BDFE7E982A429459003547B7 /* Movie+CoreDataProperties.swift in Sources */,
 				BDFE7E832A41F413003547B7 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
