@@ -24,6 +24,9 @@ struct ContentView: View {
     
     @State private var lastNameFilter = "A"
     
+    
+    @FetchRequest(sortDescriptors: []) var countries: FetchedResults<Country>
+    
     var body: some View {
         VStack {
             List {
@@ -117,6 +120,38 @@ struct ContentView: View {
             
             Button("Show S") {
                 lastNameFilter = "S"
+            }
+            
+            List {
+                ForEach(countries, id: \.self) { country in
+                    Section(country.wrappedFullName) {
+                        ForEach(country.candyArray, id: \.self) { candy in
+                            Text(candy.wrappedName)
+                        }
+                    }
+                }
+            }
+            
+            Button("Add Example") {
+                let candy1 = Candy(context: moc)
+                candy1.name = "Mars"
+                candy1.origin = Country(context: moc)
+                candy1.origin?.shortName = "UK"
+                candy1.origin?.fullName = "United Kingdom"
+                
+                let candy2 = Candy(context: moc)
+                candy2.name = "Kitkat"
+                candy2.origin = Country(context: moc)
+                candy2.origin?.shortName = "UK"
+                candy2.origin?.fullName = "United Kingdom"
+                
+                let candy3 = Candy(context: moc)
+                candy3.name = "Toblerone"
+                candy3.origin = Country(context: moc)
+                candy3.origin?.shortName = "CH"
+                candy3.origin?.fullName = "Switzerland"
+                
+                try? moc.save()
             }
         }
     }
